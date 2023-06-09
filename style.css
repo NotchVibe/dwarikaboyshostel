@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&family=Solway:wght@400;800&display=swap');
+/* font-family: 'Bree Serif', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Solway', serif; */
+
+* {
+    transition: all 0.2s ease;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(255, 211, 228, 1) 0%, rgba(205, 255, 216, 1) 58%, rgba(148, 185, 255, 1) 100%);
+}
+
+.title-switch {
+    display: none;
+}
+
+.navbar li a {
+    font-family: 'Bree Serif', serif;
+}
+
+/* SCROLL BAR CUSTOM DESIGN */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    background-color: black;
+
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(0, 0, 0), rgb(185, 0, 0), rgb(0, 0, 0));
+    border-radius: 8rem;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+}
+
+
+.main {
+    height: 92vh;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 211, 228, 1) 0%, rgba(205, 255, 216, 1) 58%, rgba(148, 185, 255, 1) 100%);
+}
+
+.main-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text h2 {
+    margin: 1rem 0;
+    color: #002f6d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-text p {
+    font-family: 'Solway', serif;
+    color: #002350;
+    text-align: center;
+}
+
+.main-display img {
+    width: 25vw;
+}
+
+/* Features */
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: #ebfff7;
+    padding: 1rem;
+}
+
+.feature-box h3 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.feature-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-display-box {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: auto;
+
+}
+
+/* OUR REVIEW */
+.our-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
+}
+
+.our-review h3 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.our-review-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-review-display-box {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 25vw;
+
+}
+
+.our-review-display-box img {
+    width: 3vw;
+    padding: 1rem 0;
+}
+
+/* SPECIAL FACILITY */
+.special-facility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background-color: #edf7ff;
+    font-family: 'Bree Serif', serif;
+}
+
+.sf-box-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+
+.sf-box {
+    background-color: white;
+    border: 1px solid goldenrod;
+    color: black;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.sf-box-img img {
+    width: 12vw;
+}
+
+/* CONTACT */
+.contact {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img {
+    height: 100%;
+}
+
+/* MEDIA RESPONSIVE TAG */
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+    .main {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .main-display img {
+        width: 50vw;
+    }
+
+    .feature-box {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .feature-display {
+        flex-direction: column;
+        width: 60vw;
+    }
+
+    .feature-display-box {
+        margin: 2rem 0;
+        height: 30vh;
+    }
+
+    .our-review {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .our-review-display {
+        flex-direction: column;
+    }
+
+    .our-review-display-box {
+        width: auto;
+        background-color: #f9f9f9;
+        margin: 1rem 0;
+    }
+
+    .sf-box-main {
+        flex-direction: column-reverse;
+    }
+}
+
+/* MEDIA SCREEN FOR MOBILE */
+@media screen and (max-width: 425px) {
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .title-switch {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        width: 80vw;
+        border: 1px solid #bebebe;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-display img {
+        width: auto;
+    }
+
+    .feature-box {
+        padding: 2rem 1rem;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        border: 1px solid #c6c6c6;
+    }
+
+    .contact img {
+        height: 50vh;
+    }
+
+    .our-review-display-box img {
+        width: 10vw;
+    }
+
+    .our-review-display-box {
+        width: auto;
+        background-color: #efefef;
+        border: 1px solid #b1b1b1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .navbar-brand img {
+        width: 12vw;
+    }
+
+    .feature-box {
+        padding: 4rem 0;
+    }
+
+    .feature-display {
+        width: auto;
+    }
+
+    .feature-display-box {
+        width: 80vw;
+    }
+
+    .main {
+        justify-content: space-evenly;
+    }
+
+    .main-text {
+        text-align: center;
+    }
+
+    .main-display img {
+        width: 50vw;
+    }
+
+    .special-facility {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .sf-box-img img {
+        width: 20vw;
+    }
+
+
+
+}
