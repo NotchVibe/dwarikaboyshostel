@@ -64,6 +64,7 @@ font-family: 'Solway', serif; */
 .main-text h2 {
     margin: 1rem 0;
     color: #002f6d;
+    text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
